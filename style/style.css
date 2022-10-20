@@ -1,21 +1,56 @@
-img {
-  text-align: center;
-  position: relative;
-  left: 22%;
+h1,
+h2,
+p {
+  font-family: "Raleway", sans-serif;
 }
 
 .navbar-nav {
   text-align: right;
+  font-family: "Raleway", sans-serif;
 }
 
 .laptop-text {
   font-size: 30px;
   text-align: center;
   position: relative;
-  left: 40px;
-  bottom: 400px;
+  left: 0px;
+  bottom: 300px;
 }
 
 .top-header {
   font-size: 220px;
+}
+
+.laptop-img {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 850px;
+  height: auto;
+  position: relative;
+  top: 12px;
+}
+
+.hero {
+  background-color: #f2e2d2;
+}
+
+.job-title {
+  text-align: center;
+  font-size: 65px;
+}
+
+.icons {
+  text-align: center;
+}
+
+.github-icon {
+  color: black;
+
+  font-size: 60px;
+}
+
+.linkedin-icon {
+  color: black;
+  font-size: 60px;
 }
