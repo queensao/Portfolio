@@ -1,0 +1,21 @@
+img {
+  text-align: center;
+  position: relative;
+  left: 22%;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
+.laptop-text {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  left: 40px;
+  bottom: 400px;
+}
+
+.top-header {
+  font-size: 220px;
+}
