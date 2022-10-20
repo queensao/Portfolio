@@ -31,6 +31,12 @@ p {
   top: 12px;
 }
 
+.projects-btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .hero {
   background-color: #f2e2d2;
 }
@@ -53,4 +59,16 @@ p {
 .linkedin-icon {
   color: black;
   font-size: 60px;
+}
+
+/* About page */
+
+.capital {
+  font-family: "Raleway", sans-serif;
+  font-size: 80px;
+}
+
+.rest {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
 }
