@@ -10,11 +10,11 @@ p {
 }
 
 .laptop-text {
-  font-size: 30px;
+  font-size: 45px;
   text-align: center;
   position: relative;
   left: 0px;
-  bottom: 300px;
+  bottom: 500px;
 }
 
 .top-header {
@@ -25,20 +25,21 @@ p {
   text-align: center;
   display: block;
   margin: 0 auto;
-  width: 850px;
+  width: 1200px;
   height: auto;
   position: relative;
   top: 12px;
 }
 
-.projects-btn {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+.project-text {
+  font-size: 30px;
 }
 
 .hero {
   background-color: #f2e2d2;
+  /* background-image: url("/images/QAO.png");
+  background-repeat: repeat;
+  background-attachment: scroll;*/
 }
 
 .job-title {
@@ -71,4 +72,33 @@ p {
 .rest {
   font-family: "Raleway", sans-serif;
   font-size: 30px;
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  text-align: left;
+  background-image: linear-gradient(
+    -225deg,
+    #030303 0%,
+    #4e4953 29%,
+    #c9c3ad 67%,
+    #f1e3d2 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 220px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
