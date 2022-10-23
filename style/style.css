@@ -1,12 +1,17 @@
+:root {
+  --primary-color: #f2e2d2;
+  --primary-font-family: "Raleway", sans-serif;
+}
+
 h1,
 h2,
 p {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--primary-font-family);
 }
 
 .navbar-nav {
   text-align: right;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--primary-font-family);
 }
 
 .laptop-text {
@@ -31,15 +36,17 @@ p {
   top: 12px;
 }
 
-.project-text {
-  font-size: 30px;
+.btn {
+  position: relative;
+  bottom: 460px;
+  width: 400px;
+  height: 75px;
+  font-size: 35px;
+  font-family: var(--primary-font-family);
 }
 
 .hero {
   background-color: #f2e2d2;
-  /* background-image: url("/images/QAO.png");
-  background-repeat: repeat;
-  background-attachment: scroll;*/
 }
 
 .job-title {
@@ -62,18 +69,6 @@ p {
   font-size: 60px;
 }
 
-/* About page */
-
-.capital {
-  font-family: "Raleway", sans-serif;
-  font-size: 80px;
-}
-
-.rest {
-  font-family: "Raleway", sans-serif;
-  font-size: 30px;
-}
-
 .animate-charcter {
   text-transform: uppercase;
   text-align: left;
@@ -89,7 +84,6 @@ p {
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -101,4 +95,57 @@ p {
   to {
     background-position: 200% center;
   }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+  .animate-charcter {
+    font-size: 110px;
+    text-align: center;
+  }
+  .laptop-text {
+    font-size: 20px;
+    position: relative;
+    bottom: 0px;
+  }
+
+  .btn {
+    position: relative;
+    bottom: 460px;
+    width: 300px;
+    height: 35px;
+    font-size: 25px;
+    font-family: var(--primary-font-family);
+  }
+
+  .job-title {
+    font-size: 30px;
+  }
+  .project-text {
+    position: relative;
+    top: 0px;
+    font-size: 20px;
+  }
+  .github-icon {
+    color: black;
+    font-size: 30px;
+  }
+
+  .linkedin-icon {
+    color: black;
+    font-size: 30px;
+  }
+}
+
+/* About page */
+
+.capital {
+  font-family: "Raleway", sans-serif;
+  font-size: 80px;
+}
+
+.rest {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
 }
