@@ -1,12 +1,16 @@
 :root {
   --primary-color: #f2e2d2;
   --primary-font-family: "Raleway", sans-serif;
+  --secondary-font-family: "Space Mono", monospace;
 }
 
 h1,
-h2,
-p {
+h2 {
   font-family: var(--primary-font-family);
+}
+
+p {
+  font-family: var(--secondary-font-family);
 }
 
 .navbar-nav {
@@ -36,7 +40,7 @@ p {
   top: 12px;
 }
 
-.btn {
+.project-text {
   position: relative;
   bottom: 460px;
   width: 400px;
@@ -103,14 +107,22 @@ p {
   .animate-charcter {
     font-size: 110px;
     text-align: center;
+    padding-top: 10px;
   }
   .laptop-text {
     font-size: 20px;
     position: relative;
     bottom: 0px;
   }
+  .small.laptop-text {
+    font-size: 30px;
+    font-weight: 20px;
+    text-align: center;
+    line-height: 10px;
+    font-family: var(--secondary-font-family);
+  }
 
-  .btn {
+  .project-text {
     position: relative;
     bottom: 460px;
     width: 300px;
@@ -122,11 +134,7 @@ p {
   .job-title {
     font-size: 30px;
   }
-  .project-text {
-    position: relative;
-    top: 0px;
-    font-size: 20px;
-  }
+
   .github-icon {
     color: black;
     font-size: 30px;

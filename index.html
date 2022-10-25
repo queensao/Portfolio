@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Raleway:ital,wght@0,100;0,300;1,100&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -63,7 +69,7 @@
       </div>
     </div>
     <br />
-    <div class="hero">
+    <div class="container hero">
       <div>
         <p class="laptop-img">
           <img
@@ -73,11 +79,31 @@
           />
         </p>
       </div>
-      <p class="laptop-text">Building simple and optimised</p>
-      <br />
-      <p class="laptop-text">web spaces</p>
-      <div class="row d-flex justify-content-center align-content-center">
-        <a href="#" class="btn btn-outline-dark col-3 project-text">
+      <p class="small-laptop-text d-sm-block d-md-none text-end fs-1">
+        Building
+      </p>
+      <p class="small-laptop-text d-sm-block d-md-none text-end fs-1">Simple</p>
+      <p class="small-laptop-text d-sm-block d-md-none text-end fs-1">
+        Optimised
+      </p>
+      <p class="small-laptop-text d-sm-block d-md-none text-end fs-1">Web</p>
+      <p class="small-laptop-text d-sm-block d-md-none text-end fs-1">Spaces</p>
+      <p class="laptop-text d-none d-sm-none d-md-block">
+        Hi! I'm Queen and love coding! I started my journey when I began my
+        Masters in Psychology. Although it my be difficult to see a correlation
+        between my degrees and coding, it has given me a unique view on how to
+        create seamless, simples web space. I am currently looking for a Junior
+        Developer position to kickstart my career and to continue my learning
+        journey.
+      </p>
+      <div
+        class="d-flex justify-content-center align-content-center d-none d-sm-none d-md-block"
+      >
+        <a
+          href="#"
+          class="btn btn-outline-dark col-3 project-text"
+          style="font-size: 35px; font-family: var(--primary-font-family)"
+        >
           Projects</a
         >
       </div>
@@ -92,7 +118,9 @@
       ></a>
     </div>
     <div>
-      <footer><i class="fa-regular fa-copyright"></i> Queen 2022</footer>
+      <footer>
+        <i class="fa-regular fa-copyright d-sm-none d-md-block"></i> Queen 2022
+      </footer>
     </div>
   </body>
 </html>
