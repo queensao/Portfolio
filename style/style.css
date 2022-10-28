@@ -2,15 +2,37 @@
   --primary-color: #f2e2d2;
   --primary-font-family: "Raleway", sans-serif;
   --secondary-font-family: "Space Mono", monospace;
+  --primary-text-color: #030303;
 }
 
 h1,
-h2 {
+h2,
+button {
   font-family: var(--primary-font-family);
 }
 
 p {
   font-family: var(--secondary-font-family);
+  font-size: 30px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #f2e2d2;
+}
+
+a:visited {
+  color: #030303;
+}
+
+a:hover {
+  color: #f2e2d2;
+  text-decoration: none;
+  transition: 0.2 ease-in-out;
+}
+
+a:active {
+  color: #f2e2d2;
 }
 
 .navbar-nav {
@@ -18,37 +40,36 @@ p {
   font-family: var(--primary-font-family);
 }
 
-.top-header {
-  font-size: 220px;
-}
-
-.laptop-img {
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  width: 1200px;
-  height: auto;
-  position: relative;
-  top: 12px;
-}
-
-.project-text {
-  position: relative;
-  bottom: 460px;
-  width: 400px;
-  height: 75px;
-  font-size: 35px;
-  font-family: var(--primary-font-family);
-}
-
 .hero {
   background-color: #f2e2d2;
-  margin: 0 auto;
+  margin: 0 20px;
+  border: 10px solid #f2e2d2;
 }
 
 .job-title {
   text-align: center;
   font-size: 65px;
+}
+
+.intro-button {
+  font-family: var(--secondary-font-family);
+  background-color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  opacity: 1;
+  border: 2px solid #030303;
+  border-radius: 5px;
+  position: relative;
+  left: 28%;
+  top: 20px;
+  width: 200px;
+  height: 50px;
+}
+
+.intro-button:hover {
+  background-color: #030303;
+  color: #f2e2d2;
+  transition: all 0.2s ease-in-out;
 }
 
 .icons {
@@ -57,13 +78,14 @@ p {
 
 .github-icon {
   color: black;
-
   font-size: 60px;
+  padding: 0 15px;
 }
 
 .linkedin-icon {
   color: black;
   font-size: 60px;
+  padding: 0 5px;
 }
 
 .animate-charcter {
@@ -88,7 +110,7 @@ p {
   font-size: 220px;
 }
 
-.plant-img {
+.memoji-img {
   width: 636;
   height: auto;
 }
@@ -102,31 +124,23 @@ p {
 /* RESPONSIVE */
 
 @media (max-width: 576px) {
+  p {
+    font-size: 20px;
+    text-align: center;
+  }
+
   .animate-charcter {
     font-size: 110px;
     text-align: center;
-    padding-top: 10px;
-  }
-  .laptop-text {
-    font-size: 20px;
-    position: relative;
-    bottom: 0px;
-  }
-  .small.laptop-text {
-    font-size: 30px;
-    font-weight: 20px;
-    text-align: center;
-    line-height: 10px;
-    font-family: var(--secondary-font-family);
+    padding-top: 50px;
   }
 
-  .project-text {
+  .intro-button {
     position: relative;
-    bottom: 460px;
-    width: 300px;
-    height: 35px;
-    font-size: 25px;
-    font-family: var(--primary-font-family);
+    left: 100px;
+    top: 0px;
+    font-size: 15px;
+    width: 100px;
   }
 
   .job-title {
@@ -141,6 +155,14 @@ p {
   .linkedin-icon {
     color: black;
     font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro-button {
+    position: relative;
+    left: 34%;
+    top: 0%;
   }
 }
 
