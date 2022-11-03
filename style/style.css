@@ -165,6 +165,15 @@ a:active {
     position: relative;
     right: 30px;
   }
+
+  .work-header {
+    text-align: center;
+  }
+
+  .work-button {
+    position: relative;
+    left: 50px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -174,7 +183,6 @@ a:active {
     top: 0%;
   }
 }
-
 /* About page */
 li {
   font-family: var(--primary-font-family);
@@ -219,4 +227,45 @@ li {
 .about-name {
   text-align: center;
   line-height: 3;
+}
+
+/* My Work Page */
+
+.work-content {
+  font-size: 16px;
+  font-weight: thin;
+  font-family: var(--primary-font-family);
+}
+
+.work-header {
+  font-family: var(--primary-font-family);
+  font-size: 25px;
+}
+
+.plant-blog-img {
+  width: 600px;
+  height: auto;
+}
+
+.work-img {
+  width: 655px;
+  height: auto;
+}
+
+.work-button {
+  font-family: var(--secondary-font-family);
+  background-color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  opacity: 1;
+  border: 2px solid #030303;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+}
+
+.work-button:hover {
+  background-color: #030303;
+  color: #f2e2d2;
+  transition: all 0.2s ease-in-out;
 }
