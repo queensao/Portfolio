@@ -44,6 +44,11 @@ a:active {
   font-family: var(--primary-font-family);
 }
 
+nav a.active {
+  color: #030303;
+  font-weight: bold;
+}
+
 .hero {
   background-color: #f2e2d2;
   margin: 0 20px;
@@ -163,7 +168,8 @@ a:active {
 
   .about-projects-button {
     position: relative;
-    right: 30px;
+    left: 20px;
+    top: 20px;
   }
 
   .work-header {
